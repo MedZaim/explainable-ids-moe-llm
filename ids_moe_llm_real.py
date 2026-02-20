@@ -229,7 +229,7 @@ except ImportError:
             return moe_pred, "Rule-based LLM: No strong anomaly indicators"
 
 # ===== STEP 5: RUN INFERENCE (SAMPLE n_samples FOR SPEED) =====
-n_samples = 15
+n_samples = 20
 print(f"\n[5/5] Running MoE + REAL LLM inference on {n_samples} samples...")
 np.random.seed(42)
 sample_idx = np.random.choice(len(X_test), n_samples, replace=False)
